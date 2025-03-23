@@ -37,7 +37,7 @@ function unDo(picFocus){
 //document.getElementsByTagName('p')
 
 // Imposta la data di destinazione
-const targetDate = new Date("2025-05-24T16:00:00").getTime();
+const targetDate = new Date("2025-08-30T15:30:00").getTime();
 const interval = setInterval(() => {
     const now = new Date().getTime(); // Ottieni la data e l'ora attuali
     const timeLeft = targetDate - now; // Calcola il tempo rimanente
