@@ -113,20 +113,17 @@ body{
 }
 
 .section-green {
-    background-color: rgba(34, 139, 34, 0.514);
     display: flex;
     flex-wrap: wrap;
 }
 
 .section-green-center {
-    background-color: rgba(34, 139, 34, 0.514);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .section-green-spacearound {
-    background-color: rgba(34, 139, 34, 0.514);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
