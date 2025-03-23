@@ -79,13 +79,13 @@ body{
 }
 
 .section-peach {
-    background-color: peachpuff;
+    background-color: sandybrown;
     display: flex;
     flex-wrap: wrap;
 }
 
 .section-peach-only {
-    background-color: peachpuff;
+    background-color: sandybrown;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -93,14 +93,14 @@ body{
 }
 
 .section-peach-center {
-    background-color: peachpuff;
+    background-color: sandybrown;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .section-peach-spacearound {
-    background-color: peachpuff;
+    background-color: sandybrown;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
