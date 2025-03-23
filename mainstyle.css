@@ -1,1 +1,349 @@
+.flex-container {
+    display: flex;
+    /*height: 200px;*/
+    align-items: right;
+    flex-direction: column;
+  }
+  
+/* .flex-container > div {
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}*/
 
+/* nav {
+    /*height: 100px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: wheat;
+} */
+
+
+/* a {
+    display: inline-block;
+    height: 60px;
+    width:150px;
+    text-align: center;
+    background-color: rgb(232, 226, 215);
+}
+
+nav a{
+    text-decoration: none;
+    text-align: center;
+    margin-right: 2%;
+    font-size: 20px;
+    color: darkgreen;
+}
+*/
+/*
+li{
+    background-color: wheat;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+*/
+.current{
+    /* background: #d19322; */
+    text-decoration: underline;
+}
+
+body{
+    /* background-color: antiquewhite; */
+    background-color: floralwhite;
+    font-family: 'Playfair Display', sans-serif;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+
+}
+
+.style-numbers {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.section-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.section-peach {
+    background-color: peachpuff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-peach-only {
+    background-color: peachpuff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.section-peach-center {
+    background-color: peachpuff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-peach-spacearound {
+    background-color: peachpuff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section-antiquewhite {
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-green {
+    background-color: rgba(34, 139, 34, 0.514);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-green-center {
+    background-color: rgba(34, 139, 34, 0.514);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-green-spacearound {
+    background-color: rgba(34, 139, 34, 0.514);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* container using grid for images of Brescia*/
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    overflow: hidden;
+}
+  
+.container > div {
+    text-align: center;
+    overflow: hidden;
+}
+
+/* .container p {
+    position: relative;
+    top: -50%;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+} */
+
+@media (max-width: 768px) { /*se lo schermo è minore di 768px, smartphones*/
+    .container {
+        grid-template-columns: auto;
+    }
+    
+    .container p {
+        margin-top: 0.6em;
+        margin-bottom: 2em;
+    }
+}
+
+.mezzacolonna {
+    width: 50%;
+    text-align: center;
+    /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    */
+    }
+/* prova per div flex (class row) che contiene 2 diverse div (class col-md-5 e col-md-7) una a fianco all'altra*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.title {
+    position: relative;
+    width: 30%;
+    text-align: center;
+}
+
+.div-immagine-left {
+    position: relative;
+    width: 30%;
+}
+
+.col-md-5 {
+    position: relative;
+    width: 90%;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 40px;
+}
+
+.col-md-title {
+    position: relative;
+    width: 90%;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md-3 {
+    position: relative;
+    width: 30%;
+    text-align: center;
+}
+
+.col-md-2 {
+    position: relative;
+    width: 45%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .col-md-5, .col-md-title {
+        flex: 0 0 41.66666667%;
+        max-width: 41.66666667%;
+    }
+}
+
+@media (min-width: 768px) { /*se lo schermo è maggiore di 768px*/
+    .col-md-3 {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+}
+/* 136/342*/
+@media (max-width: 658px) { /*se lo schermo è minore di 658px*/
+    .col-md-3, .col-md-2 {
+        flex: 0 0 46%;
+        max-width: 46%;
+    }
+}
+/* @media (min-width: 768px) {
+    .col-md-3 {
+        flex: 0 0 58.33333333%;
+        max-width: 58.33333333%;
+    }
+} */
+
+
+
+/* style="font-family: futura-lt-w01-book, futura-lt-w05-book, sans-serif;"
+*/
+/* classes for some text */
+.indirizzo {
+    font-style: italic;
+    border-bottom: 1px dotted #000;
+    text-decoration: none;
+    color: black;
+}
+
+.indirizzo:visited {
+    text-decoration: none;
+}
+
+/* list of unicode SYMBOLS https://tutorialzine.com/2014/12/you-dont-need-icons-here-are-100-unicode-symbols-that-you-can-use */
+
+
+/*FORM STYLE*/
+form {
+    display: inline-block;
+    /* Form outline */
+    padding: 1em;
+    border: 2px solid rgba(0, 0, 0, 0.728);
+    border-radius: 1em;
+}
+
+.div-form {
+    text-align: center;
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover; */
+}
+
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    min-width: 90px;
+    text-align: right;
+}
+
+input,
+textarea,
+/* button, */
+select {
+    /* To make sure that all text fields have the same font settings
+    By default, text areas have a monospace font */
+    font: 1em sans-serif;
+    font-family: inherit;
+    /* font-family: 'Playfair Display', sans-serif; */
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+    /* Match form field borders */
+    border: 1px solid #999;
+}
+
+fieldset {
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+
+/* input:focus,
+textarea:focus {
+    /* Set the outline width and style
+    outline-style: solid;
+    /* To give a little highlight on active elements
+    outline-color: #000;
+} */
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+    /* Provide space to type some text */
+    height: 5em;
+}
+
+.button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+    /* This extra margin represent roughly the same space as the space between the labels and their text fields */
+    margin-left: 0.5em;
+    /* width: 350px; */
+}
+
+form ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    border: none;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
