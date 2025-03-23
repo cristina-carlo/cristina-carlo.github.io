@@ -9,7 +9,7 @@
 .topnav a {
     float: left;
     display: block;
-    color: palevioletred;
+    color: indianred;
     text-align: center;
     padding: 14px 22px; /* 22px for phone view*/
     text-decoration: none;
@@ -18,11 +18,11 @@
 }
   
 .topnav a:hover {
-    border-bottom: 3px solid palevioletred;
+    border-bottom: 3px solid indianred;
 }
   
 .topnav a.active {
-    border-bottom: 3px solid palevioletred;
+    border-bottom: 3px solid indianred;
 }
   
 .bottomnav {
