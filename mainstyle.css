@@ -243,7 +243,19 @@ body{
     }
 } */
 
+@media (max-width: 768px) { /*se lo schermo è minore di 768px*/
+    .col-md-3, .col-md-2 {
+        flex: 0 0 90%;
+        max-width: 90%;
+        padding-bottom: 4%;
+    }
+}
 
+@media (min-width: 768px) { /*se lo schermo è maggiore di 768px*/
+    .col-md-2 {
+        padding-bottom: 4%;
+    }
+}
 
 /* style="font-family: futura-lt-w01-book, futura-lt-w05-book, sans-serif;"
 */
